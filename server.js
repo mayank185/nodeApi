@@ -7,11 +7,10 @@ const express = require('express'),
 const mysql = require('mysql');
 // connection configurations
 const mc = mysql.createConnection({
-    host: '127.0.0.1',
+    host: 'localhost',
     user: 'root',
     password: 'password',
-    database: 'testDb',
-    port:'3306'
+    database: 'testDb'
 });
  
 mc.connect(function(err) {
