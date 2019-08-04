@@ -23,9 +23,10 @@ mc.connect(function(err) {
 // mc.connect();
 
 app.listen({
-  port: 80,
+  port: port,
   host:'0.0.0.0'
 });
+
 
 console.log('API server started on: ' + port);
 
