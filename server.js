@@ -1,7 +1,8 @@
 const express = require('express'),
   app = express(),
   bodyParser = require('body-parser');
-  port = process.env.PORT || 80;
+  port = process.env.PORT || 3000;
+
 
 
 const mysql = require('mysql');
@@ -21,10 +22,9 @@ mc.connect(function(err) {
 
 // mc.connect();
 
-app.listen({
-  host: 'localhost',
-  port: 3000,
-  exclusive: true
+app.run({
+  port: 5000,
+  host:'0.0.0.0'
 });
 
 console.log('API server started on: ' + port);
