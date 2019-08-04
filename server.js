@@ -1,7 +1,7 @@
 const express = require('express'),
   app = express(),
   bodyParser = require('body-parser');
-  port = process.env.PORT || 3000;
+  port = process.env.PORT || 80;
 
 
 const mysql = require('mysql');
@@ -15,6 +15,7 @@ const mc = mysql.createConnection({
  
 mc.connect(function(err) {
     console.log('-----------Mayank--',err,'--------------nnnn');
+    //debugger;
     if (err) throw err;
 });
 
